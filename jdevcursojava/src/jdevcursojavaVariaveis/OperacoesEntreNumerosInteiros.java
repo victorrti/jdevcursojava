@@ -1,4 +1,4 @@
-package jdevcursojava;
+package jdevcursojavaVariaveis;
 
 public class OperacoesEntreNumerosInteiros {
 	public static void main(String[] args) {

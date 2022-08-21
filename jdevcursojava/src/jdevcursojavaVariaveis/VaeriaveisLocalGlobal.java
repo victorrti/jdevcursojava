@@ -1,4 +1,4 @@
-package jdevcursojava;
+package jdevcursojavaVariaveis;
 
 public class VaeriaveisLocalGlobal {
 	/* Variavel Global e acessivel a todos */

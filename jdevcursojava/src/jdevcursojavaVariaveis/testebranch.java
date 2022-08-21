@@ -1,4 +1,4 @@
-package jdevcursojava;
+package jdevcursojavaVariaveis;
 
 public class testebranch {
 	public Integer teste() {

@@ -1,4 +1,4 @@
-package jdevcursojava;
+package jdevcursojavaVariaveis;
 
 public class VariavelTipoString {
 	public static void main(String[] args) {
