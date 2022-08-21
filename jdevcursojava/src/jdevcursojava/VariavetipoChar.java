@@ -6,7 +6,7 @@ public class VariavetipoChar {
 		char pessoaJuridica = 'J';
 		char sexo = 'M';
 		
-		if(pessoaFisicaJuridica == 'F') {
+		if(pessoaFisicaJuridica == 'F'){
 			
 			System.out.println("Pessia Fisica");
 		} else {
