@@ -1,5 +1,7 @@
 package orientacaoObjeto.PriemieiraClasseAluno;
 
+import java.util.Objects;
+
 public class Aluno {
 	private String nome;
 	private int idade;
@@ -92,9 +94,7 @@ public class Aluno {
 	}
 	public void setSerieMatriculaddo(String serieMatriculaddo) {
 		this.serieMatriculaddo = serieMatriculaddo;
-	}  
-		
-	
+	} 
 	
 	
 	@Override
@@ -128,5 +128,25 @@ public class Aluno {
 			return false;
 		}
 	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(nome);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Aluno other = (Aluno) obj;
+		return Objects.equals(nome, other.nome);
+	}
+	
+	
+	// equals e hashcode
+	
+	
 
 }

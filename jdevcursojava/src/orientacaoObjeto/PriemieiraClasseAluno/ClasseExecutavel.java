@@ -30,6 +30,17 @@ public class ClasseExecutavel {
 		
 		
 		System.out.println(aluno1.toString());
+		
+		Aluno aluno3 = new Aluno();
+		Aluno aluno4 = new Aluno();
+		
+		 aluno3.setNome("Victor");
+		 aluno4.setNome("Victor");
+		 
+		 if(aluno3.equals(aluno4)) {
+			 System.out.println("os alunos são iguais");
+		 }else {
+			 System.out.println("não sãop iguais");		 }
 	}
 	
 	
