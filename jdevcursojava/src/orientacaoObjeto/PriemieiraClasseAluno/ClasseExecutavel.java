@@ -16,6 +16,13 @@ public class ClasseExecutavel {
 		System.out.println(aluno1.getNomeMae());
 		
 		
+		aluno1.setNota(10);
+		aluno1.setNota1(20);
+		aluno1.setNota2(30);
+		aluno1.setNota3(40);
+		
+		System.out.println(aluno1.getMediaNota());
+		
 	}
 
 }
