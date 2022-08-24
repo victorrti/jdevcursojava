@@ -29,7 +29,7 @@ public class ClasseExecutavel {
 		System.out.println("Resultado :"+  (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
 		
 		
-		
+		System.out.println(aluno1.toString());
 	}
 	
 	

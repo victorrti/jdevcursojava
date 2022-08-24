@@ -11,6 +11,9 @@ public class Aluno {
     private double nota1;
     private double nota2;
     private double nota3;
+    private String nomePai;
+	private String dataMatricula;
+	private String serieMatriculaddo;
 	
 	public double getNota1() {
 		return nota1;
@@ -89,13 +92,18 @@ public class Aluno {
 	}
 	public void setSerieMatriculaddo(String serieMatriculaddo) {
 		this.serieMatriculaddo = serieMatriculaddo;
+	}  
+		
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
+				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nota=" + nota + ", nota1="
+				+ nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nomePai=" + nomePai + ", dataMatricula="
+				+ dataMatricula + ", serieMatriculaddo=" + serieMatriculaddo + "]";
 	}
-
-	private String nomePai;
-	private String dataMatricula;
-	private String serieMatriculaddo;
-	
-	
 	public Aluno() {		
 	}
 	public Aluno(String nomeMae, String nomePai,String nome) {		
