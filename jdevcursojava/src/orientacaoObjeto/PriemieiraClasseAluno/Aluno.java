@@ -111,5 +111,14 @@ public class Aluno {
 	public double getMediaNota() {
 		return ((nota + nota1 + nota2 + nota3)/4);
 	}
+	
+	public boolean getAlunoAprovado() {
+		double media  = this.getMediaNota();
+		if(media >= 70) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 
 }

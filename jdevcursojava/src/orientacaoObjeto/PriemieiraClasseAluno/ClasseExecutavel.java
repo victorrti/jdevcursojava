@@ -15,6 +15,7 @@ public class ClasseExecutavel {
 		aluno1.setNomeMae("Edna");
 		System.out.println(aluno1.getNomeMae());
 		
+		// utilizando primeiro metodo calculo media
 		
 		aluno1.setNota(10);
 		aluno1.setNota1(20);
@@ -23,6 +24,14 @@ public class ClasseExecutavel {
 		
 		System.out.println(aluno1.getMediaNota());
 		
+		// metodo retorna aprovado
+		
+		System.out.println("Resultado :"+  (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		
+		
+		
 	}
+	
+	
 
 }
