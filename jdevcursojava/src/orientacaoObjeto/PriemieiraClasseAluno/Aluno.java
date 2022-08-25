@@ -1,7 +1,7 @@
 package orientacaoObjeto.PriemieiraClasseAluno;
 
 import java.util.Objects;
-
+import orientacaoObjeto.PriemieiraClasseAluno.Disciplina;
 public class Aluno {
 	private String nome;
 	private int idade;
@@ -9,43 +9,25 @@ public class Aluno {
 	private String registroGeral;
 	private String numeroCpf;
 	private String nomeMae;
-    private double nota;
-    private double nota1;
-    private double nota2;
-    private double nota3;
     private String nomePai;
 	private String dataMatricula;
 	private String serieMatriculaddo;
 	
-	public double getNota1() {
-		return nota1;
-	}
-	public void setNota1(double nota1) {
-		this.nota1 = nota1;
-	}
-	public double getNota2() {
-		return nota2;
-	}
-	public void setNota2(double nota2) {
-		this.nota2 = nota2;
-	}
-	public double getNota3() {
-		return nota3;
-	}
-	public void setNota3(double nota3) {
-		this.nota3 = nota3;
-	}
-	public double getNota() {
-		return nota;
-	}
-	public void setNota(double nota) {
-		this.nota = nota;
-	}
+	private Disciplina disciplina = new Disciplina();
+	
+	
+	
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	public Disciplina getDisciplina() {
+		return disciplina;
+	}
+	public void setDisciplina(Disciplina disciplina) {
+		this.disciplina = disciplina;
 	}
 	public int getIdade() {
 		return idade;
@@ -97,13 +79,7 @@ public class Aluno {
 	} 
 	
 	
-	@Override
-	public String toString() {
-		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
-				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nota=" + nota + ", nota1="
-				+ nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nomePai=" + nomePai + ", dataMatricula="
-				+ dataMatricula + ", serieMatriculaddo=" + serieMatriculaddo + "]";
-	}
+
 	public Aluno() {		
 	}
 	public Aluno(String nomeMae, String nomePai,String nome) {		
@@ -117,7 +93,7 @@ public class Aluno {
 		this.nome = nome;
 	}
 	public double getMediaNota() {
-		return ((nota + nota1 + nota2 + nota3)/4);
+		return ((disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4())/4);
 	}
 	
 	public boolean getAlunoAprovado() {

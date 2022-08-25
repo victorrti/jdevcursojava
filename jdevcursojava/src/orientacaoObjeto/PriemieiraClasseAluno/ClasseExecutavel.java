@@ -15,12 +15,14 @@ public class ClasseExecutavel {
 		aluno1.setNomeMae("Edna");
 		System.out.println(aluno1.getNomeMae());
 		
-		// utilizando primeiro metodo calculo media
+		/* // utilizando primeiro metodo calculo media
 		
-		aluno1.setNota(10);
+		aluno1.getDisciplina()
 		aluno1.setNota1(20);
 		aluno1.setNota2(30);
-		aluno1.setNota3(40);
+		aluno1.setNota3(40); */
+		
+    
 		
 		System.out.println(aluno1.getMediaNota());
 		
@@ -41,7 +43,25 @@ public class ClasseExecutavel {
 			 System.out.println("os alunos são iguais");
 		 }else {
 			 System.out.println("não sãop iguais");		 }
+		 
+		 Aluno aluno5 = new Aluno();
+		 
+		 Disciplina disciplina2 = new Disciplina();
+		 aluno5.setDisciplina(disciplina2);
+		 
+		 aluno5.getDisciplina().setNota1(10);
+		aluno5.getDisciplina().setNota2(10);
+		aluno5.getDisciplina().setNota3(10);
+		 aluno5.getDisciplina().setNota4(10);
+		 
+		 System.out.println(aluno5.getMediaNota());
+		 
 	}
+	
+	 
+	 
+	  
+			 
 	
 	
 
