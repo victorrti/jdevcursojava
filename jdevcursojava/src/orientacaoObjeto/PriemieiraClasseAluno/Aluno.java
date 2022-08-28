@@ -1,5 +1,7 @@
 package orientacaoObjeto.PriemieiraClasseAluno;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import orientacaoObjeto.PriemieiraClasseAluno.Disciplina;
 public class Aluno {
@@ -78,6 +80,8 @@ public class Aluno {
 		this.serieMatriculaddo = serieMatriculaddo;
 	} 
 	
+	private List<Disciplina> disciplia = new ArrayList<Disciplina>();
+	
 	
 
 	public Aluno() {		
@@ -92,22 +96,30 @@ public class Aluno {
 		
 		this.nome = nome;
 	}
-	public double getMediaNota() {
+	/*public double getMediaNota() {
 		return ((disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4())/4);
-	}
+	 */
 	
-	public boolean getAlunoAprovado() {
+	/* public boolean getAlunoAprovado() {
 		double media  = this.getMediaNota();
 		if(media >= 70) {
 			return true;
 		}else {
 			return false;
-		}
-	}
+		} 
+	} */
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(nome);
 	}
+	public List<Disciplina> getDisciplia() {
+		return disciplia;
+	}
+	public void setDisciplia(List<Disciplina> disciplia) {
+		this.disciplia = disciplia;
+	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -120,8 +132,25 @@ public class Aluno {
 		return Objects.equals(nome, other.nome);
 	}
 	
+	public double getMedia(List<Disciplina> disciplinas) {
+		double media = 0;
+		for(Disciplina d : disciplinas) {
+			media += d.getNota();
+		}
+		return media/disciplinas.size();
+	}
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
+				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
+				+ ", dataMatricula=" + dataMatricula + ", serieMatriculaddo=" + serieMatriculaddo + ", disciplina="
+				+ disciplina + ", disciplia=" + disciplia + "]";
+	}
 	
-	// equals e hashcode
+	
+	
+	
+	
 	
 	
 
