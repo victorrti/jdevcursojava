@@ -2,7 +2,7 @@ package orientacaoObjeto.PriemieiraClasseAluno;
 
 import javax.swing.JOptionPane;
 
-public class ListaDinamicaDisciplinaExecutavel {
+public class listaremoveexecutavel{
 	public static void main(String[] args) {
 		
 		Aluno aluno1 = new Aluno();
@@ -26,7 +26,7 @@ public class ListaDinamicaDisciplinaExecutavel {
 		
 		if(opcao == 0 ) {
 			String disciplinaRemover = JOptionPane.showInputDialog("qual a disciplina1,2,3,4 ?");
-			aluno1.getDisciplia().remove(Integer.valueOf(disciplinaRemover));
+			aluno1.getDisciplia().remove(Integer.valueOf(disciplinaRemover).intValue() -1);
 		}
 		JOptionPane.showMessageDialog(null, aluno1.getDisciplina());
 	}

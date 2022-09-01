@@ -60,6 +60,7 @@ public class ClasseExecutavel {
 		 Disciplina disciplina4= new Disciplina();
 		 Disciplina disciplina5 = new Disciplina();
 		 
+		
 		 disciplina1.setDisciplina("matematica");
 		 disciplina3.setDisciplina("portugues");
 		 disciplina4.setDisciplina("fisica");
@@ -83,16 +84,4 @@ public class ClasseExecutavel {
 		 System.out.println(alunoListaDisciplina.getMedia(alunoListaDisciplina.getDisciplia()));
 		 
 	}
-	
-	 
-	
-	
-	 
-	 
-	 
-	  
-			 
-	
-	
-
 }
