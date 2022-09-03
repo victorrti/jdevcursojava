@@ -40,9 +40,7 @@ public class removendondoelementolista {
 				}
 			}
 			
-			for(int i = 0; i< alunos.size(); i++) {
-				System.out.println(alunos.get(i));
-			}
+
 
 	}
 

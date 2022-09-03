@@ -147,9 +147,19 @@ public class Aluno {
 				+ disciplina + ", disciplia=" + disciplia + "]";
 	}
 	
+		
 	
-	
-	
+	public String Aprovacao(Aluno aluno) {
+		if(aluno.getMedia(aluno.getDisciplia()) >= 70) {
+			return StatusAluno.APROVADO;
+		}else if(aluno.getMedia(aluno.getDisciplia()) > 60 && aluno.getMedia(aluno.getDisciplia()) <70 ) {
+			return StatusAluno.RECUPERACAO;
+		} else {
+			return StatusAluno.REPROVADO;
+		}
+		
+		
+	}
 	
 	
 	
