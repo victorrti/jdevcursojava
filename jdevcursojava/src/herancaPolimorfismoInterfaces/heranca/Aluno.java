@@ -35,5 +35,10 @@ public class Aluno extends Pessoa{
 	public String retornaNomeCpf() {
 		return this.getNome() + this.getCpf() + this.getMatricula();
 	}
+	
+	@Override
+	public String metodoObrigatorio(){
+		return "metodo Obrigatorio";
+	}
   
 }

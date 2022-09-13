@@ -1,6 +1,6 @@
 package herancaPolimorfismoInterfaces.heranca;
 
-public abstract  class Pessoa { 
+public abstract class Pessoa { 
 	
 	protected String nome;
 	protected String cpf;
@@ -22,4 +22,6 @@ public abstract  class Pessoa {
 	public String retornaNomeCpf(){
 		return this.getNome() + this.getCpf();
 	}
+	
+	public abstract String metodoObrigatorio();
 }
