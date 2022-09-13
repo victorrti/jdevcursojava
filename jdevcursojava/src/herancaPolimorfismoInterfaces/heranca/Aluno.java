@@ -14,6 +14,10 @@ public class Aluno extends Pessoa{
 		super.nome = nome;
 		
 	}
+	public Aluno() {
+		
+		
+	}
 
 	public List<Disciplina> getDisciplina() {
 		return disciplina;
