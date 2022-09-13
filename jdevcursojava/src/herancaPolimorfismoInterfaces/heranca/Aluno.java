@@ -30,6 +30,10 @@ public class Aluno extends Pessoa{
 	public void setMatricula(Integer matricula) {
 		this.matricula = matricula;
 	}	
-  
+   
+	@Override
+	public String retornaNomeCpf() {
+		return this.getNome() + this.getCpf() + this.getMatricula();
+	}
   
 }

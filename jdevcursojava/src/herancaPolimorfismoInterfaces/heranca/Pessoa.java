@@ -18,4 +18,8 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+	
+	public String retornaNomeCpf(){
+		return this.getNome() + this.getCpf();
+	}
 }
